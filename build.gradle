@@ -26,8 +26,8 @@ dependencies {
 	// spring cloud starter aws
     implementation('org.springframework.cloud:spring-cloud-starter-aws:2.2.6.RELEASE')
   	// lombok
-	compileOnly 'org.projectlombok:lombok'
-	annotationProcessor 'org.projectlombok:lombok'
+	compileOnly 'org.projectlombok:lombok:1.18.24'
+	annotationProcessor 'org.projectlombok:lombok:1.18.24'
 	
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	runtimeOnly 'org.postgresql:postgresql'
