@@ -1,0 +1,10 @@
+cloud:
+  aws:
+    s3:
+      bucket: exampleBucketName # AWS S3 Bucket Name
+    region:
+      static: ap-northeast-2 # AWS Region
+    stack:
+      auto: false
+    credentials:
+      instanceProfile: true

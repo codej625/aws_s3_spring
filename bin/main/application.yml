@@ -1,0 +1,36 @@
+spring:
+# Thymeleaf
+  thymeleaf:
+    cache: 'false'
+    enabled: 'true'
+    prefix: classpath:templates/
+    suffix: .html
+# Servlet
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+# Datasource Configuration
+  datasource:
+    password: '1007'
+    hikari:
+      maximum-pool-size: '4'
+    username: codej625
+    url: jdbc:postgresql://localhost:5432/project
+# Profiles Include
+  profiles:
+    include: aws, credentials
+  sql:
+    init:
+      platform: postgresql
+# SpringBoot Devtools
+  devtools:
+    livereload:
+      enabled: 'true'
+# Mybatis
+mybatis:
+  type-aliases-package: com.web.portfolio.domain
+  mapper-locations: mybatis/mapper/*.xml, mybatis/mapper/**/*.xml
+# Server Port
+server:
+  port: '8080'
