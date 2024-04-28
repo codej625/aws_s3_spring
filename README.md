@@ -1,2 +1,1 @@
-# aws_s3_spring
-s3 cloud
+# AWS S3 연동
